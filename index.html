@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Minha página
+        </title>
+        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand">
+                Consulta CEP
+            </a>
+            <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="digite o CEP" id="CEP">
+                <button class="btn btn-outline-success my-2 my-sm-0" onclick="consultaCEP()">Buscar</button>
+            </div>
+        </nav>
+
+        <div class="container barra-progresso" style="margin-top: 20px;">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+            </div>
+        </div>
+        <div class="container cep" style="margin-top: 20px;">
+            <div class="row">
+                <h2 id="infCEP">CEP &nbsp;</h2>
+                <h2 id="descCEP">
+
+                </h2>
+            </div>
+            <div class="row">
+                <table class="table">
+                    <tbody>
+                        <tr><!--linha-->
+                            <td> <!--coluna-->
+                                Logradouro
+                            </td>
+                            <td id="logradouro">
+                            </td>
+                        </tr>
+                        <tr><!--linha-->
+                            <td> <!--coluna-->
+                                Bairro
+                            </td>
+                            <td id="bairro">
+                            </td>
+                        </tr>
+                        <tr><!--linha-->
+                            <td> <!--coluna-->
+                                Localidade
+                            </td>
+                            <td id="localidade">
+                            </td>
+                        </tr>
+                        <tr><!--linha-->
+                            <td> <!--coluna-->
+                                UF
+                            </td>
+                            <td id="UF">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+<!-- sem o bootstrap 
+           <input id="CEP">
+        <button type="button" onclick="consultaCEP()">
+            Consultar
+        </button>
+        <p id="logradouro"></p>
+        <p id="bairro"></p>
+        <p id="localidade"></p>
+        <p id="uf"></p>
+        -->
+    </body>
+</html>
